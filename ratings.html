@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rate Us | SysNexa™</title>
+<link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+<script defer src="ratings.js"></script>
+<!-- Font Awesome CDN for star icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <img src="image/1-removebg-preview.png" alt="SysNexa Logo" />
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="ratings.html" class="active">Rate Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div id="thankYouMessage" style="display:none; color: rgb(9, 102, 114); margin-top: 10px; font-weight: bold;"></div>
+
+  <h2>Rate Our Services</h2>
+  <form id="ratingForm">
+    <input type="text" id="username" placeholder="Your Name" required />
+    <div class="stars" id="stars">
+      <i class="fas fa-star" data-value="1"></i>
+      <i class="fas fa-star" data-value="2"></i>
+      <i class="fas fa-star" data-value="3"></i>
+      <i class="fas fa-star" data-value="4"></i>
+      <i class="fas fa-star" data-value="5"></i>
+    </div>
+    <textarea id="comment" rows="4" placeholder="Your Comment"></textarea>
+    <button type="submit">Submit Rating</button>
+  </form>
+  <ul id="ratingsList" class="ratings"></ul>
+</main>
+<footer>&copy; 2025 SysNexa™. All rights reserved.</footer>
+</body>
+</html>
