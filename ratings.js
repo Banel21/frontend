@@ -41,7 +41,7 @@ const ratingsList = document.getElementById('ratingsList');
 // Load ratings from backend API
 async function loadRatings() {
   try {
-    const res = await fetch('http://localhost:5000/api/ratings');
+    const res = await fetch("https://sysnexa-backend.onrender.com/api/ratings");
     if (!res.ok) throw new Error('Failed to fetch ratings');
     const ratings = await res.json();
 
