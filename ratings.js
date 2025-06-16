@@ -41,7 +41,7 @@ const ratingsList = document.getElementById('ratingsList');
 // Load ratings from backend API
 async function loadRatings() {
   try {
-    const res = await fetch("https://sysnexa-backend.onrender.com/api/ratings");
+    const res = await fetch("https://backend-ypd3.onrender.com/api/ratings");
     if (!res.ok) throw new Error('Failed to fetch ratings');
     const ratings = await res.json();
 
@@ -73,7 +73,7 @@ ratingForm.addEventListener('submit', async (e) => {
   }
 
   try {
-    const response = await fetch('http://localhost:5000/api/ratings', {
+    const response = await fetch('https://backend-ypd3.onrender.com/api/ratings', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, rating: selectedRating, comment })
